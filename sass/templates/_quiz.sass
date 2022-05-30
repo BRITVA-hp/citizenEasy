@@ -1,0 +1,78 @@
+.quiz
+    background: url(../img/quiz/bg.png) no-repeat center/cover
+    padding-top: 180px
+    padding-bottom: 20px
+    height: 100vh
+    min-height: 670px
+    max-height: 1000px
+    &__text
+        font-family: 'Raleway', sans-serif
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 110%
+        margin-bottom: 10px
+        text-align: center
+        display: none
+    &__card
+        width: 278px
+        display: flex
+        align-items: center
+        margin-bottom: 40px
+        &:last-of-type
+            margin-bottom: 0
+        &__img
+            margin-right: 20px
+        &__text
+            font-family: 'Raleway', sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 110%
+    &__container
+        height: 100%
+    &__row
+        height: 100%
+        align-items: flex-start
+    &__block
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        max-width: 1120px
+        width: 100%
+    &__button-group
+        justify-content: flex-start
+    &__button
+        width: 234px
+        margin-right: 20px
+        &:last-of-type
+            margin-right: 0
+    &__box
+        display: grid
+        grid-template-columns: repeat(auto-fill, 360px)
+        grid-column-gap: 20px
+        grid-row-gap: 15px
+    &__title
+        text-align: left
+        margin: 0
+        margin-bottom: 65px
+    &__label
+        display: block
+        cursor: pointer
+        width: 360px
+        height: 55px
+        &__text
+            width: 100%
+            height: 100%
+            background: rgba(255, 255, 255, 0.9)
+            border: 0.5px solid #111419
+            border-radius: 15px
+            display: flex
+            align-items: center
+            padding: 0 20px
+    &__radio
+        display: none
+        &:checked + .quiz__label__text
+            background: rgba(0, 101, 177, 0.9)
+            color: #F6F6F6
